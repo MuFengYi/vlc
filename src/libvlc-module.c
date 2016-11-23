@@ -1833,7 +1833,7 @@ vlc_module_begin ()
     add_obsolete_integer( "oss-caching" ) /* 2.0.0 */
     add_obsolete_integer( "screen-caching" ) /* 2.0.0 */
     add_obsolete_integer( "v4l2-caching" ) /* 2.0.0 */
-    add_integer( "disc-caching", DEFAULT_PTS_DELAY / 1000,
+    add_integer( "disc-caching", DEFAULT_PTS_DELAY / 3000,
                  DISC_CACHING_TEXT, DISC_CACHING_LONGTEXT, true )
         change_integer_range( 0, 60000 )
         change_safe()
@@ -1843,7 +1843,7 @@ vlc_module_begin ()
     add_obsolete_integer( "dvdnav-caching" ) /* 2.0.0 */
     add_obsolete_integer( "dvdread-caching" ) /* 2.0.0 */
     add_obsolete_integer( "vcd-caching" ) /* 2.0.0 */
-    add_integer( "network-caching", CLOCK_FREQ / 1000,
+    add_integer( "network-caching", CLOCK_FREQ / 3000,
                  NETWORK_CACHING_TEXT, NETWORK_CACHING_LONGTEXT, true )
         change_integer_range( 0, 60000 )
         change_safe()
